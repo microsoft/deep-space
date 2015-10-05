@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <title>Bootcamp Demo App</title>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/themes/flick/jquery-ui.css"/>
+    <link rel="stylesheet" href="./css/app.css"/>
+  </head>
+
+  <body ng-app="flyingStarsApp">
+
+    <div class="header text-center">
+      <h1>Bootcamp Demo App</h1>
+      <hr/>
+      <h3>Deep Space</h3>
+    </div>
+    <br>
+
+    <div>
+      <ng-view></ng-view>
+    </div>
+  </body>
+  
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.4/bootstrap.min.js"></script>
+
+  <script src="./libs/angular.js"></script>
+  <script src="./libs/angular-route.js"></script>
+  <script src="./libs/angular-resource.js"></script>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/controllers/FlyingStarsController.js"></script>
+  <script src="./js/directives/FlyingStars.js"></script>
+  <script src="./js/services/ImagesSvc.js"></script>
+
+</html>

@@ -1,0 +1,43 @@
+.fsslider {
+  margin-top: 5px;
+}
+
+.fssliderContainer {
+  color: white;
+  width: 200px;
+}
+
+#speedSliderContainer {
+  float: left;
+}
+
+#speedSlider .ui-slider-range {
+	background: #428041;
+}
+
+#speedSlider .ui-slider-handle {
+	background: #428041;
+}
+
+#starsSliderContainer {
+  float: right;
+}
+
+#starsSlider .ui-slider-range {
+	background: #FE642E;
+}
+
+#starsSlider .ui-slider-handle {
+	background: #FE642E;
+}
+
+.container {
+  background: black;
+  width: 70%;
+  height: 70%
+}
+
+.fsCanvasContainer {
+  width: 100%;
+  height: 90%
+}
