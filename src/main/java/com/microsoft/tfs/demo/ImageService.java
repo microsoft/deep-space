@@ -39,10 +39,10 @@ import java.util.ArrayList;
 @Path("/images")
 public class ImageService {
 
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<Image> getImages() {
-        List<Image> planetaries = new ArrayList<Image>();
+    private final static List<Image> planetaries;
+
+    static {
+        planetaries = new ArrayList<Image>(); 
 
         //http://www.solarsystemscope.com/nexus/resources/planet_images/
         //Content distributed under CC Attribution license
@@ -71,7 +71,11 @@ public class ImageService {
         saturn.setWidth(1206);
         saturn.setHeight(690);
         planetaries.add(saturn);
+    }
 
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Image> getImages() {
         return planetaries;
     }
 
@@ -80,8 +84,7 @@ public class ImageService {
     @Path("{name}")
     public Image getByName(@PathParam("name") final String name) {
         final String imageSrc = String.format("/%s.png", name.toLowerCase());
-        final List<Image> images = getImages();
-        for (Image i : images) {
+        for (Image i : planetaries) {
             if (i.getSrc().endsWith(imageSrc)) {
                 return i;
             }
