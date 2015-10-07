@@ -40,7 +40,8 @@ fsDirectives.directive('flyingStars', function($window) {
     template: '<div>' +
                 '<div class="fsCanvasContainer"> <canvas id="flyingStarsCanvas"> </canvas> </div>' +
                 '<div class="fssliderContainer" id="speedSliderContainer"> <span>Zooming Speed: </span> <span id="speedText" ng-bind="speed"></span> <div class="fsslider" id="speedSlider"/> </div>' +
-                '<div class="fssliderContainer" id="starsSliderContainer"> <span>Number of Stars:</span> <span id="starsText" ng-bind="stars"></span> <div class="fsslider" id="starsSlider"/> </div>' +
+                // Uncomment the following line to add a slider for number of stars
+                // '<div class="fssliderContainer" id="starsSliderContainer"> <span>Number of Stars:</span> <span id="starsText" ng-bind="stars"></span> <div class="fsslider" id="starsSlider"/> </div>' +
               '</div>',
     link: function (scope, element, attribute) {
 
