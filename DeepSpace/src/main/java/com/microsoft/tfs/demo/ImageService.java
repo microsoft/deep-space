@@ -63,12 +63,13 @@ public class ImageService {
 
         // Uncomment the following section of code so Earth appears
         // and remember to update the unit tests in "ImageServiceTest.java"
-
+/*
         final Image earth = new Image();
         earth.setSrc("./images/earth.png");
         earth.setWidth(512);
         earth.setHeight(512);
         PLANETARY.add(earth);
+*/
 
         final Image jupiter = new Image();
         jupiter.setSrc("./images/jupiter.png");
