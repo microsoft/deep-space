@@ -57,8 +57,8 @@ public class ImageServiceTest {
         assertNotNull(images);
 
         // Only have one of the two lines below uncommented one at a time
-        assertEquals(3, images.size());   // Leave this line in for no Earth
-        // assertEquals(4, images.size()); // Uncomment this line for Earth
+        // assertEquals(3, images.size());   // Leave this line in for no Earth
+        assertEquals(4, images.size()); // Uncomment this line for Earth
     }
 
     @Test
@@ -88,12 +88,10 @@ public class ImageServiceTest {
     @Test
     public void testGetImagesEarth() {
         // Uncomment the following test when Earth is added
-        /*
         List<Image> images = this.underTest.getImages();
         Image earth = getByName(images, "earth.png");
         assertEquals(512, earth.getWidth());
         assertEquals(512, earth.getHeight());
-        */
     }
 
     @Test
