@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'pmd'
+apply plugin: 'checkstyle'
+
+group = 'com.microsoft.tfs.demo'
+version = '1.0-SNAPSHOT'
+
+description = """Deep Space Bootcamp Sample App"""
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.microsoft.azure', name: 'applicationinsights-web', version:'[1.0,)'
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet-core', version:'2.17'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version:'2.17'
+
+    testCompile group: 'junit', name: 'junit', version:'4.11'
+}
+
+checkstyle {
+    toolVersion = "6.1"
+    ignoreFailures = true
+    configFile = file "${rootDir}/config/checkstyle/custom-rules.xml"
+    configProperties = [
+        'checkstyle.java.header': "${rootDir}/config/checkstyle/java.header"
+    ]
+}
+
+pmd {
+    toolVersion = "5.0.3"
+    ignoreFailures = true
+    ruleSetFiles = files "${rootDir}/config/pmd/custom-pmd-rules.xml"
+}
