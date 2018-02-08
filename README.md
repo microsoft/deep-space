@@ -1,2 +1,2 @@
 # deep-space
-Sample web application written in Java and uses AngularJS.
+Sample web application written in Java and uses AngularJS
