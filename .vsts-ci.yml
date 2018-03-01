@@ -26,3 +26,5 @@ steps:
     pathToPublish: '$(build.artifactStagingDirectory)'
     artifactName: 'artifact'
     artifactType: 'container'
+
+
