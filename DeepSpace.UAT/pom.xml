@@ -20,6 +20,16 @@
       <id>Maven Central Repository</id>
       <url>http://repo1.maven.org/maven2</url>
     </repository>
+    <repository>
+      <id>vstscix-visualstudio.com-maven</id>
+      <url>https://vstscix.pkgs.visualstudio.com/_packaging/maven/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
   <build>
