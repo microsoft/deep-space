@@ -44,6 +44,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <pluginRepositories>
+  <pluginRepository>
+   <releases>
+     <updatePolicy>never</updatePolicy>
+   </releases>
+   <snapshots>
+     <enabled>false</enabled>
+   </snapshots>
+   <id>central</id>
+   <name>Central Repository</name>
+   <url>https://repo.maven.apache.org/maven2</url>
+ </pluginRepository>
+ </pluginRepositories>
 
   <build>
     <pluginManagement>
@@ -62,6 +75,16 @@
               </goals>
             </execution>
           </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.1</version>
+          <configuration>
+            <delimiters>
+              <delimiter>@</delimiter>
+            </delimiters>
+            <useDefaultDelimiters>false</useDefaultDelimiters>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -146,6 +169,7 @@
           </connectors>
         </configuration>
       </plugin>
+      <maven-resources-plugin.version>3.0.1</maven-resources-plugin.version>
     </plugins>
 
     <finalName>deepspace</finalName>
