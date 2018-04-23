@@ -14,6 +14,7 @@
     <project.report.sourceEncoding>UTF-8</project.report.sourceEncoding>
     <mvn.compiler.version>3.0</mvn.compiler.version>
     <maven.jetty.version>6.1.12</maven.jetty.version>
+    <maven-resources-plugin.version>3.0.1</maven-resources-plugin.version>
     <jersey.version>2.17</jersey.version>
   </properties>
 
