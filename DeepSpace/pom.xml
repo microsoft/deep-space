@@ -170,7 +170,6 @@
           </connectors>
         </configuration>
       </plugin>
-      <maven-resources-plugin.version>3.0.1</maven-resources-plugin.version>
     </plugins>
 
     <finalName>deepspace</finalName>
