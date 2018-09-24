@@ -3,11 +3,12 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+name: My Specific Branch Build
 trigger:
   branches:
     include:
     - master
-    - refs/tags/*
+    - releases/*
 
 steps:
 - script: echo Hello, world!
