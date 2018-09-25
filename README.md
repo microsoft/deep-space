@@ -10,3 +10,5 @@ CI trigger 3
 CI trigger 4
 
 CI trigger 5
+
+CI trigger 6
