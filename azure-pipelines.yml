@@ -5,10 +5,9 @@
 
 name: My Specific Branch Build
 trigger:
-  branches:
-    include:
-    - master
-    - releases/*
+  - +:refs/heads/*
+  - +:refs/pull/*/merge
+  - +:refs/tags/*
 
 steps:
 - script: echo Hello, world!
